@@ -1,0 +1,116 @@
+.success-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  animation: fadeIn 0.8s ease-out;
+  z-index: 80;
+  position: fixed;
+  top: 1px;
+  
+}
+
+.checkmark-wrapper {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 20px;
+  animation: popIn 1s ease-out;
+}
+
+.checkmark {
+width: 100%;
+aspect-ratio: 1 / 1;
+border-radius: 50%;
+  height: 100%;
+  stroke: #22c55e;
+  stroke-width: 6;
+  stroke-miterlimit: 10;
+  animation: scaleCheck 0.3s ease-in-out both;
+}
+
+.checkmark-circle {
+  stroke-dasharray: 339.29;
+  stroke-dashoffset: 339.29;
+  stroke: #22c55e;
+  animation: drawCircle 1.8s ease-out forwards;
+}
+
+.checkmark-check {
+  stroke-dasharray: 70;
+  stroke-dashoffset: 70;
+  stroke: #22c55e;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  animation: drawCheck 0.4s ease-out 0.8s forwards;
+}
+
+.success-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #065f46;
+}
+
+.success-message {
+  color: #4b5563;
+  text-align: center;
+  max-width: 400px;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+
+.success-button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #16a34a;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.success-button:hover {
+  background-color: #15803d;
+}
+
+/* Animations */
+@keyframes drawCircle {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes drawCheck {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleCheck {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

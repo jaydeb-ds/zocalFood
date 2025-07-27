@@ -1,0 +1,14 @@
+.menu_div{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    /* gap: 20px; */
+    /* margin: 20px 0; */
+    overflow-x: scroll;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.menu_div::-webkit-scrollbar{
+    display: none;
+}
+
