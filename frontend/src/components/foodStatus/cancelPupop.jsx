@@ -7,7 +7,7 @@ import { StoreContext } from "../../context/StoreContex";
 export default function CancelConfirmation({ setShowCanelPopup, orderID }) {
 
     const cancelOrderYes = async (event, orderId) => {
-        const { URL } = useContext(StoreContext)
+        const URL  = "https://zocalfood.onrender.com"
 
     const response = await axios.post(URL+"/api/order/status",{
       orderId:orderID,
