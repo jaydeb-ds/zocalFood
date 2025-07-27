@@ -3,7 +3,7 @@ import axios from 'axios';
 import { toast, Zoom } from 'react-toastify';
 
 function Add() {
-  let url = "http://localhost:5000"
+  let url = "https://zocalfood.onrender.com"
   const [image, setImage] = useState(null);
   const [data, setData] = useState({
     name: '',
