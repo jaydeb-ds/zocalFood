@@ -14,7 +14,7 @@ const StoreContextProvider = (props) => {
     const [show_login, setShow_login] = useState(false)
 
 
-    const URL = "http://localhost:5000"
+    const URL = "https://zocalfood.onrender.com"
 
     const addToCart = async (itemId) => {
 
