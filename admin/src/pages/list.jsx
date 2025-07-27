@@ -5,7 +5,7 @@ import { useState } from 'react'
 import { toast } from 'react-toastify'
 
 function List() {
-  const URL = "http://localhost:5000"
+  const URL = "https://zocalfood.onrender.com"
   const [list, setList] = useState([])
 
   const fetchlist = async()=>{
